@@ -2,7 +2,30 @@
 Folha de estilo de site one page html5 e css3
 augusto zano domingos
 */
-body{
-background-color: #ff0000;
+/*  smartphone vertical*/
 
+/*smartphone horizontal*/
+ @media (min-width:576px) {
+    body{
+        background-color: #0ff;
+    }
+ }
+/*table vertical*/
+@media (min-width: 768px){
+body{
+    background-color: #ff0;
+}
+
+}
+/*tablet horizontal*/
+@media (min-width: 992px){
+    body{
+     background-color: #ff6600;
+    }
+}
+/*pc*/
+@media (min-width:1200px){
+    body{
+       background-color: #f00; 
+    }
 }
