@@ -28,6 +28,10 @@ padding:0;
     display: flex;
     align-items: center;
   }
+  .Flex3{
+    display: flex;
+    flex-direction: column;
+  }
   .Botao{
     text-decoration: none;
     color: #fff;
@@ -103,38 +107,8 @@ main h1{
 main h2{
   font-size: 1em;
   margin: 20px 0px 50px 0px;
-
 }
 
-
-/*smartphone horizontal*/
- @media (min-width:576px) {
-    
-    .Container{
-        max-width: 540px;
-    }
-    /*Destaque*/
-    main h1, main h2{
-      text-shadow: #000 0.5em 0.5em 0.5em 0.5em;
-    }
- }
-/*table vertical*/
-@media (min-width: 768px){
-
-.Container{
-    max-width: 720px;
-}
-/*Destaque*/
-main{
-  height: 45vh;
-}
-main h1{
-  font-size: 5.5em;
-
-}
-main h2{
-  font-size: 2em;
-}
 /*sobre*/
 #sobre{
   padding: 50px 0px ;
@@ -159,6 +133,57 @@ main h2{
    .topicoSobre img{
     margin: 10px;
    }
+/*one page*/
+#onePage{
+  padding: 50px 10px;
+}
+ #onePage h2{
+  margin-bottom: 10px;
+ }
+ #onePage p{
+  margin-bottom: 25px;
+ }
+ #video iframe{
+  width: 340px;
+  height: 191px;
+  border: 0;
+ }
+
+/*smartphone horizontal*/
+ @media (min-width:576px) {
+    
+    .Container{
+        max-width: 540px;
+    }
+    /*Destaque*/
+    main h1, main h2{
+      text-shadow: #000 0.5em 0.5em 0.5em 0.5em;
+    }
+    /*one Page */
+    #video iframe{
+      width: 560px;
+      height:315px ;
+    }
+
+ }
+/*table vertical*/
+@media (min-width: 768px){
+
+.Container{
+    max-width: 720px;
+}
+/*Destaque*/
+main{
+  height: 45vh;
+}
+main h1{
+  font-size: 5.5em;
+
+}
+main h2{
+  font-size: 2em;
+}
+/
 }
 /*tablet horizontal*/
 @media (min-width: 992px){
@@ -212,5 +237,9 @@ main h2{
     #destaqueSobre img{
       border-radius: 50%;
       margin-right: 50px;
+    }
+    .Flex3{
+      flex-direction: row;
+      align-items: center;
     }
 }
