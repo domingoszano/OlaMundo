@@ -24,6 +24,10 @@ padding:0;
     justify-content: space-between;
     /*background-color: #a9a9a9;*/
   }
+  .Flex2{
+    display: flex;
+    align-items: center;
+  }
   .Botao{
     text-decoration: none;
     color: #fff;
@@ -97,6 +101,7 @@ main h2{
 
 }
 
+
 /*smartphone horizontal*/
  @media (min-width:576px) {
     
@@ -125,6 +130,30 @@ main h1{
 main h2{
   font-size: 2em;
 }
+/*sobre*/
+#sobre{
+  padding: 50px 0px ;
+  background: url(imag/background.png);
+  background-size: cover;
+  background-position: center;
+}
+#destaqueSobre{
+  display: none;
+}
+#textSobre{
+   color: #fff;
+   padding: 0px 10px;
+   
+}
+#textSobre h2{
+  margin-bottom: 10px;
+}
+  .topicoSobre{
+    margin-top: 20px;
+  }
+   .topicoSobre img{
+    margin: 10px;
+   }
 }
 /*tablet horizontal*/
 @media (min-width: 992px){
@@ -169,5 +198,14 @@ main h2{
     }
     nav ul li a:hover{
       color: #c00000;
+    }
+    /*sobre*/
+    #destaqueSobre{
+  display: inline;
+
+    }
+    #destaqueSobre img{
+      border-radius: 50%;
+      margin-right: 50px;
     }
 }
